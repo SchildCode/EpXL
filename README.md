@@ -1,5 +1,5 @@
 # EpXL
-A macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). Developed as a result of frustration over the other user-interfaces, including the standard Energy Plus IDF editor, and overcomes the impossible task of editing .IDF text files directly. Will i future be converted to JSON output with the possibility for batch-automation for parametric studies.
+A simple macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). Developed after frustration over the other user-interfaces, including the standard Energy Plus IDF editor. It overcomes the impossible task of editing .IDF text files directly, and is adaptable to automate simulation tasks. It will in future be converted to JSON output with the possibility for batch-automation for parametric studies.
 
 ### Functionality
 - EpXL is distributed with the Input Data Dictionary (IDD) for Energy Plus v8.9.0. Whenever a new version of Energy Plus is relased, you can update EpXL by viewing sheet 'IDD', which automatically imports the latest data dictionary (.IDD file), or any earlier version of you choice. This process takes some time. Save the EpXL workbook after you have done this.
