@@ -1,5 +1,5 @@
 # EpXL
-A simple macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). Developed after frustration over the other user-interfaces, including the standard Energy Plus IDF editor. It overcomes the impossible task of editing .IDF text files directly, and is adaptable to automate simulation tasks. It will in future be converted to JSON output with the possibility for batch-automation for parametric studies.
+A simple macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). Developed after frustration over the other user-interfaces, including the standard Energy Plus IDF editor. It overcomes the impossible task of editing .IDF text files directly, and can be adapted to automate simulation tasks. It will in future be converted to JSON output with the possibility for batch-automation for parametric studies.
 
 ### Functionality
 - EpXL is distributed with the Input Data Dictionary (IDD) for Energy Plus v8.9.0. Whenever a new version of Energy Plus is relased, you can update EpXL by viewing sheet 'IDD', which automatically imports the latest data dictionary (.IDD file), or any earlier version of you choice. This process takes some time. Save the EpXL workbook after you have done this.
@@ -8,6 +8,7 @@ A simple macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyP
 - At any time, you can vet the input data in sheet 'IDF' against the IDD by keying CTRL+Q (for Quality check). This also updates the popup comments.
 - Viewing sheet 'Simulate' automatically runs EnergyPlus and shows a list of hyperlinks to important output files. 
 - EpXL is written in Visual Basic for Applications (VBA), which you can be easily modify to automate your own simulation tasks.
+- EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
 
 ### Summary of the main macros:
 - CTRL+I: Import an .IDF file to sheet 'IDF'.
