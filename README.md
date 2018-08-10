@@ -10,7 +10,7 @@ A simple macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyP
 - EpXL is written in Visual Basic for Applications (VBA), which you can be easily modify to automate your own simulation tasks.
 - EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
 
-### Summary of the main macros:
+### Summary of the main macros
 - CTRL+I: Import an .IDF file to sheet 'IDF'.
 - CTRL+Q: Quality check of the input data in sheet 'IDF'.
 - CTRL+E: Export the input data to a .IDF file. This is normally not necessary, as the 'Simulate' sheet does this anyway.
