@@ -23,7 +23,7 @@ Simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to 
 (* Outputs epJSON by default. Conditional compilation argument outputJSON is defined in Tools > VBAProjectProperties: =1 to output new .epJSON, =0 for legacy .IDF file)
 
 ### License & warranty
-- Distributed under the GLP v3 lisence (https://www.gnu.org/licenses/gpl-3.0.en.html)
+- Distributed under the GLP v3 lisence (https://www.gnu.org/licenses/gpl-3.0.en.html). Users if this software shall attribute its use in publications with an appropriate autohor citation and URL to this site.
 - Provided without warranty of any kind.
 
 ### Author & copyright
