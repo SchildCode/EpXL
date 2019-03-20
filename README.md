@@ -34,5 +34,5 @@ Simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to 
 - Distributed under the GLP v3 lisence (https://www.gnu.org/licenses/gpl-3.0.en.html). Please acknowledge/attribute use of this software in your report/publication with an appropriate author citation and URL to this site.
 - Provided without warranty of any kind.
 
-### Author & copyright
+### Author & copyright owner
 © Peter.Schild@OsloMet.no
