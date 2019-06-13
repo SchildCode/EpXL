@@ -2,13 +2,13 @@
 EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import .epJSON and legacy .IDF input data files, or you can create/edit from scratch. It gives an excellent compact overview of all input data, which you can manipulate (copy/paste/edit), with popup descriptions and automatic error checking. EpXL can also automate multidimensional parametric analysis or Monte Carlo simulations for optimization. Output is automatically imported into Excel, with a link for viewing the 3D model.
 
 ### Functionality overview
-- Input data is tabulated in a compact form, with popup field descriptions, thus giving a good overview for editing.
-- Automatic checks for max/min bounds, list options, and value type (numeric or string)
-- Import/export .epJSON and legacy .IDF input data files.
-- Automatically import results files into Excel, e.g. time-series
-- Link to view 3D model of the building
-- Multidimensional optimization and parametric analysis possible
-- Always up-to-date with the latest version of EnergyPlus (schema)
+- **Input data is tabulated in a compact form, with popup field descriptions, thus giving a good overview for editing**
+- **Automatic checks for max/min bounds, list options, and value type (numeric or string)**
+- **Import/export .epJSON and legacy .IDF input data files**
+- **Automatically import results files into Excel, e.g. time-series**
+- **Link to view 3D model of the building**
+- **Multidimensional optimization and parametric analysis possible**
+- **Always up-to-date with the latest version of EnergyPlus (schema)**
 
 ### Functionality in detail
 - Input data is tabulated in sheet 'Input' (one row per object; one column per input field). The first column contains a drop-down list for choosing the field type.
@@ -26,10 +26,10 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
 
 ### Summary of the main macros
-- CTRL+I: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
-- CTRL+Q: Quality check of the input data in sheet 'Input'.
-- CTRL+E: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
-- F1 (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
+- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
+- **CTRL+Q**: Quality check of the input data in sheet 'Input'.
+- **CTRL+E**: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
+- **F1** (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
 - The 'Start simulation' button on sheet 'Simulate' automatically exports the input data file, runs EnergyPlus, reports any errors, and compiles list of  list of output files (with hyperlinks). For example, clicking on the hypetlinks for .csv files opens then directly in Excel.
 - Viewing the 'Schema' sheet automatically imports the latest schema "Energy+.schema.epJSON", which and is found in the EnergyPlus root directory on your PC.
 
