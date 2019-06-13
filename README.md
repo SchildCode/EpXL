@@ -5,10 +5,21 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **Input data is tabulated in a compact form, with popup field descriptions, thus giving a good overview for editing**
 - **Automatic checks for max/min bounds, list options, and value type (numeric or string)**
 - **Import/export .epJSON and legacy .IDF input data files**
-- **Automatically import results files into Excel, e.g. time-series**
-- **Link to view 3D model of the building**
+- **Hyperlinks automatically import results files into Excel, e.g. time-series**
+- **Hyperlinks to view 3D model of the building, and airflow network**
 - **Multidimensional optimization and parametric analysis possible**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
+
+### Summary of the main macros
+- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
+- **CTRL+Q**: Quality check of the input data in sheet 'Input'.
+- **CTRL+E**: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
+- **F1** (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
+- The **'Start simulation'** button on sheet 'Simulate' automatically exports the input data file, runs EnergyPlus, reports any errors, and compiles list of list of output files (with hyperlinks). In the case of multiple-case automation, the 'Start simulation' button runs either a discrete number of simulations (parametric/sensitivity analysis) or ad-infinitum (Monte Carlo) until you press the 'Stop' button.
+- Clicking on the **hyperlinks** in sheet 'Simulate' opens results for viewing (e.g. .csv files in Excel)
+- Viewing the **'Schema'** sheet automatically imports the latest schema "Energy+.schema.epJSON", which and is found in the EnergyPlus root directory on your PC.
+
+(* Outputs epJSON by default. Conditional compilation argument outputJSON is defined in Tools > VBAProjectProperties: =1 to output new .epJSON, =0 for legacy .IDF file)
 
 ### Functionality in detail
 - Input data is tabulated in sheet 'Input' (one row per object; one column per input field). The first column contains a drop-down list for choosing the field type.
@@ -22,18 +33,8 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 -- Parametric analysis (discrete, either multidimensional or one-at-a-time sensitivity analysis)
 -- Multidimensional Monte Carlo simulations (low-discrepancy quasi- or pseudorandom) for optimization, with user-definable Pareto front.
 -- You specify both input parameters and output parameters (or formulae) in a table at the bottom of sheet sheet 'Simulate'.
-- EpXL is written in Visual Basic for Applications (VBA), which you can be easily modify to automate your own simulation tasks.
+- EpXL is written in Visual Basic for Applications (VBA), which you are free to edit. One of the routines is dedicated to user-code to modify to automate your own tasks. There are many on-line resources for learning VBA, such as 'Excel VBA for Dummies' 3rd Ed.
 - EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
-
-### Summary of the main macros
-- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
-- **CTRL+Q**: Quality check of the input data in sheet 'Input'.
-- **CTRL+E**: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
-- **F1** (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
-- The 'Start simulation' button on sheet 'Simulate' automatically exports the input data file, runs EnergyPlus, reports any errors, and compiles list of  list of output files (with hyperlinks). For example, clicking on the hypetlinks for .csv files opens then directly in Excel.
-- Viewing the 'Schema' sheet automatically imports the latest schema "Energy+.schema.epJSON", which and is found in the EnergyPlus root directory on your PC.
-
-(* Outputs epJSON by default. Conditional compilation argument outputJSON is defined in Tools > VBAProjectProperties: =1 to output new .epJSON, =0 for legacy .IDF file)
 
 ### Installation and activation
 - Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
