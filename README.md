@@ -1,14 +1,27 @@
 # EpXL <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
-EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import both new .epJSON and legacy .IDF input data files. The input data is tabulated in a very compact form (one row per object; one column per input field) in sheet 'Input', with popup field descriptions from the epJSON schema, thus giving a good overview for editing. EpXL can also automate multidimensional parametric analysis or Monte Carlo simulations.
+EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import .epJSON and legacy .IDF input data files, or you can create/edit from scratch. It gives an excellent compact overview of all input data, which you can manipulate (copy/paste/edit), with popup descriptions and automatic error checking. EpXL can also automate multidimensional parametric analysis or Monte Carlo simulations for optimization. Output is automatically imported into Excel, with a link for viewing the 3D model.
 
-### Functionality
-- EpXL is distributed with the input data schema (earlier called Input Data Dictionary, IDD) for EnergyPlus v8.9.0 embedded. Whenever a new version of Energy Plus is relased, you can update EpXL to the latest schema by viewing sheet 'Schema', which automatically imports the latest schema (Energy+.schema.epJSON file), or an earlier version of you choose. Save the EpXL workbook after you have done this.
-- Key CTRL+I to import an EnergyPlus data file. Both legacy Input Data Files (.IDF) and new .epJSON files can be imported. Immediately after importing the file into sheet 'Input', EpXL vets the data against the JSON schema. After this you can edit the data just like any spreadsheet by inserting or deleting rows and editing cells. Each row is an object type, and each column is an input field. The object types can appear in any order, but fields must appear in the order specified by the schema.
-- Key F1 (Help-key) to show popup-comments describing all the input data fields for the current row (object) in the 'Input' sheet.
-- EpXL is distributed with example input data in the 'Input' sheet, which is a variation of the EnergyPlus example buildings. You can safely clear this data (CTRL+A selects the whole sheet, then DELETE key). The import function (CTRL+I) also clears sheet 'Input' before importing the file.
+### Functionality overview
+- Input data is tabulated in a compact form, with popup field descriptions, thus giving a good overview for editing.
+- Automatic checks for max/min bounds, list options, and value type (numeric or string)
+- Import/export .epJSON and legacy .IDF input data files.
+- Automatically import results files into Excel, e.g. time-series
+- Link to view 3D model of the building
+- Multidimensional optimization and parametric analysis possible
+- Always up-to-date with the latest version of EnergyPlus (schema)
+
+### Functionality in detail
+- Input data is tabulated in sheet 'Input' (one row per object; one column per input field). The first column contains a drop-down list for choosing the field type.
+- EpXL is distributed with example input data in the 'Input' sheet, which is a version of the EnergyPlus example buildings. You can safely clear this data (CTRL+A selects the whole sheet, then DELETE key). The import function (CTRL+I) also clears sheet 'Input' before importing the file.
+- Key F1 (Help-key) to show popups describing all the input data fields for the current row (object) in the 'Input' sheet. These descriptions can be updated at any time to the latest EnergyPlus schema.
+- Key CTRL+I to import any EnergyPlus data file. Both legacy Input Data Files (.IDF) and new .epJSON files can be imported. Immediately after importing the file into sheet 'Input', EpXL vets the data against the JSON schema. After this you can edit the data just like any spreadsheet by inserting or deleting rows and editing cells. Each row is an object type, and each column is an input field. The object types can appear in any order, but fields must appear in the order specified by the schema.
 - Key CTRL+Q (for Quality check) any time, to vet the input data in sheet 'Input' against the schema. This checks for missing or superfluous object types, missing required field values, out-of-range values, and case-sensitive text options. Incorrect case is corrected automatically for case-sensitive options. This checking is also conducted automatically when you click on the 'Start simulation' button.
+- EpXL is distributed with the input data schema (earlier called Input Data Dictionary, IDD) for EnergyPlus v8.9.0 embedded. Whenever a new version of Energy Plus is relased, you can update EpXL to the latest schema by viewing sheet 'Schema', which automatically imports the latest schema (Energy+.schema.epJSON file), or an earlier version of you choose. Save the EpXL workbook after you have done this.
 - To run a simulation, click on button "Run simulation" on sheet 'Simulate'. For "single-case" simulation, EpXL shows a list of hyperlinks to important output files. For multiple-case simulations, EpXL generates a list inputs and outputs for each case in sheet 'Output'.
-- For multiple-case simulation, you specify both input parameters and output parameters (or formulae) in a table at the bottom of sheet sheet 'Simulate'.
+- Multidimensional optimization and parameter analysis (multiple-case automation):
+-- Parametric analysis (discrete, either multidimensional or one-at-a-time sensitivity analysis)
+-- Multidimensional Monte Carlo simulations (low-discrepancy quasi- or pseudorandom) for optimization, with user-definable Pareto front.
+-- You specify both input parameters and output parameters (or formulae) in a table at the bottom of sheet sheet 'Simulate'.
 - EpXL is written in Visual Basic for Applications (VBA), which you can be easily modify to automate your own simulation tasks.
 - EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
 
