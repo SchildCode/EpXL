@@ -2,7 +2,7 @@
 EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import .epJSON and legacy .IDF input data files, or you can create/edit from scratch. It gives an excellent compact overview of all input data, which you can manipulate (copy/paste/edit), with popup descriptions and automatic error checking. EpXL can also automate multidimensional parametric analysis or Monte Carlo simulations for optimization. Output is automatically imported into Excel, with a link for viewing the 3D model.
 
 ### Functionality overview
-- **Input data is tabulated in a compact form, with popup field descriptions, thus giving a good overview for editing**
+- **Input data is tabulated in a compact form, with popup field descriptions, giving a good overview for editing**
 - **Automatic checks for max/min bounds, list options, and value type (numeric or string)**
 - **Import/export .epJSON and legacy .IDF input data files**
 - **Hyperlinks automatically import results files into Excel, e.g. time-series**
@@ -22,7 +22,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 (* Outputs epJSON by default. Conditional compilation argument *outputJSON* is defined in **Tools > VBAProjectProperties**: =1 for .epJSON, =0 for .IDF)
 
 ### Functionality in detail
-- Input data is tabulated in sheet 'Input' (one row per object; one column per input field). The first column contains a drop-down list for choosing the field type.
+- Input data is tabulated in sheet 'Input' (one row per object; one column per input field). The first column contains a drop-down list for choosing the field type. You can copy/paste and use formulae, just as in a normal spreadsheet.
 - EpXL is distributed with example input data in the 'Input' sheet, which is a version of the EnergyPlus example buildings. You can safely clear this data (CTRL+A selects the whole sheet, then DELETE key). The import function (CTRL+I) also clears sheet 'Input' before importing the file.
 - Key F1 (Help-key) to show popups describing all the input data fields for the current row (object) in the 'Input' sheet. These descriptions can be updated at any time to the latest EnergyPlus schema.
 - Key CTRL+I to import any EnergyPlus data file. Both legacy Input Data Files (.IDF) and new .epJSON files can be imported. Immediately after importing the file into sheet 'Input', EpXL vets the data against the JSON schema. After this you can edit the data just like any spreadsheet by inserting or deleting rows and editing cells. Each row is an object type, and each column is an input field. The object types can appear in any order, but fields must appear in the order specified by the schema.
