@@ -1,4 +1,4 @@
-# EpXL
+# EpXL <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
 EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import both new .epJSON and legacy .IDF input data files. The input data is tabulated in a very compact form (one row per object; one column per input field) in sheet 'Input', with popup field descriptions from the epJSON schema, thus giving a good overview for editing. EpXL can optionally automate multipe-case simulations (discrete multidimensional parametric/sensitivity analysis, and quasi- or pseudorandom Monte Carlo simulation).
 
 ### Functionality
