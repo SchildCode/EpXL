@@ -7,7 +7,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **Import/export .epJSON and legacy .IDF input data files**
 - **Hyperlinks automatically import results files into Excel, e.g. time-series**
 - **Hyperlinks to view 3D model of the building, and airflow network**
-- **Multidimensional optimization and parametric analysis**
+- **Multidimensional parametric analysis and and user-definable multi-objective optimization**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
 
 ### Summary of the main macros
