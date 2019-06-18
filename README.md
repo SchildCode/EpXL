@@ -8,7 +8,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **Hyperlinks automatically import results files into Excel, e.g. time-series**
 - **Hyperlinks to view 3D model of the building, and airflow network**
 - **Multidimensional parametric analysis and and user-definable multi-objective optimization**
-- **User functions for psycrhometrics and Pareto-front (multi-objective optimization)**
+- **User functions for psychrometrics and Pareto-front (multi-objective optimization)**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
 
 <p align="center"><img src="images/Fig02.png" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: The leftmost column has a dropdown list of object types</sub></p>
