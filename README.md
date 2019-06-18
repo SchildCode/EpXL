@@ -1,4 +1,4 @@
-# EpXL <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
+# EpXL [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3249089.svg)](https://doi.org/10.5281/zenodo.3249089) <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
 EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsheet user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import .epJSON and legacy .IDF input data files, or you can create/edit from scratch. It gives an excellent compact overview of all input data, which you can manipulate (copy/paste/edit), with popup descriptions and automatic error checking. EpXL can also automate multidimensional parametric analysis or Monte Carlo simulations for optimization. Output is automatically imported into Excel, with a link for viewing the 3D model.
 
 ### Functionality overview
@@ -77,11 +77,20 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 <p align="center"><img src="images/Fig12.png" alt="Import schema"/><br/><sub>Window asking for you to browse to EnergyPlus root path</sub></p>
 
 ### License & warranty
-- Distributed under the GLP v3 lisence (https://www.gnu.org/licenses/gpl-3.0.en.html). Please acknowledge/attribute use of this software in your report/publication with an appropriate author citation and URL to this site.
+- Distributed under the GLP v3 lisence (https://www.gnu.org/licenses/gpl-3.0.en.html). Please acknowledge/attribute use of this software in your report/publication with an appropriate author citation; see the example BibTeX code below.
 - Provided without warranty of any kind.
 
 ### Author & copyright owner
 © Peter.Schild@OsloMet.no
+
+### BibTeX for citing EpXL
+@Misc{Schild19,<br/>
+  author =   {Peter G. Schild},<br/>
+  title =    {{EpXL}: {EnergyPlus-Excel}},<br/>
+  howpublished = {\url{https://github.com/SchildCode/EpXL/}},<br/>
+  doi = {10.5281/zenodo.3249089}<br/>
+  year = {2019}<br/>
+}<br/>
 
 ### References
 [<a name="ref1">1</a>] Faure, H., Lemieux, C. (2009). "Generalized Halton Sequences in 2008: A Comparative Study", *ACM Transactions on Modeling and Computer Simulation (TOMACS)*. Vol.19 No.4, Oct. 2009, Article no. 15
