@@ -35,7 +35,16 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - EpXL can handle huge models, with thousands of objects (rows). One adaptation to achieve this was that the values for object Matrix:TwoDimension are stored as strings, i.e. each matrix row is stored in one cell as string of semicolon-separated values in row-major order. Thus a 10\*10 matrix is stored in 10 spreadsheet cells, and EpXL can hypothetically store matrices up to a maximum of 2<sup>14</sup> rows \* 2<sup>14</sup> columns (assuming single digit elements).
 - Key CTRL+Q (for Quality check) any time, to vet the input data in sheet 'Input' against the schema. This checks for missing or superfluous/duplicate object types, missing required field values, out-of-range values, and case-sensitive text options. Incorrect case is corrected automatically for case-sensitive options. This checking is also conducted automatically when you click on the 'Start simulation' button.
 - EpXL is distributed with the input data schema (earlier called Input Data Dictionary, IDD) for EnergyPlus v9.1.0 embedded. Whenever a new version of Energy Plus is relased, you can update EpXL to the latest schema by viewing sheet 'Schema', which automatically imports the latest schema (Energy+.schema.epJSON file), or an earlier version of you choose. Save the EpXL workbook after you have done this.
-- User functions for psychrometrics to convert between relative humidity, dewpoint temperature and humidity ratio (kg H2O / kg dry air): EpXL_Pws(Ta_K), EpXL_RH1_air(Tair_K, Tdew_K), EpXL_RH2_air(Ta_K, Patm_Pa, HumidRatio_kgkg), EpXL_HumidRatio1_air(Ta_K, Patm_Pa, RH), EpXL_HumidRatio2_air(Tdew_K, Patm_Pa), EpXL_HumidRatio3_air(Ta_K, Patm_Pa, Twet_K), EpXL_Tdew1_air(Pw_Pa), Tdew2_air(Patm_Pa, HumidRatio_kgkg), Tdew3_air(Ta_K, RH)
+- User functions for psychrometrics to convert between relative humidity, dewpoint temperature and humidity ratio (kg H<sub>2</sub>O / kg dry air):
+  - EpXL_Pws(Ta_K)
+  - EpXL_RH1_air(Tair_K, Tdew_K)
+  - EpXL_RH2_air(Ta_K, Patm_Pa, HumidRatio_kgkg)
+  - EpXL_HumidRatio1_air(Ta_K, Patm_Pa, RH)
+  - EpXL_HumidRatio2_air(Tdew_K, Patm_Pa)
+  - EpXL_HumidRatio3_air(Ta_K, Patm_Pa, Twet_K)
+  - EpXL_Tdew1_air(Pw_Pa)
+  - EpXL_Tdew2_air(Patm_Pa, HumidRatio_kgkg)
+  - EpXL_Tdew3_air(Ta_K, RH)
 - To run a simulation, click on button "Run simulation" on sheet 'Simulate'. For "single-case" simulation, EpXL shows a list of hyperlinks to important output files. For multiple-case simulations, EpXL generates a list inputs and outputs for each case in sheet 'Output'.
 
 <p align="center"><img src="images/Fig06.png" alt="View DXF file"/><br/><sub>Sheet 'Simulate': Press 'Start simulation' button. The most important output files are listed with hyperlinks. Hyperlink for viewing 3D model (.DXF file). The other hyperlinks open files in Excel or text viewers.</sub></p>
