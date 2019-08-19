@@ -14,7 +14,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 <p align="center"><img src="images/Fig02.png" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: The leftmost column has a dropdown list of object types</sub></p>
   
 ### Summary of the main macros
-- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
+- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'. You can optionally append/merge input data when you import files.  
 - **CTRL+Q**: Quality check of the input data in sheet 'Input'.
 - **CTRL+E**: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
 - **F1** (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
