@@ -14,7 +14,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 <p align="center"><img src="images/Fig02.png" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: The leftmost column has a dropdown list of object types</sub></p>
   
 ### Summary of the main macros
-- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'. You can optionally append/merge input data when you import files.  
+- **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
 - **CTRL+Q**: Quality check of the input data in sheet 'Input'.
 - **CTRL+E**: Export the input data to a .IDF file or .epJSON*. This is normally not necessary, as the 'Start simulation' button does this anyway.
 - **F1** (Help button): Show pop-up comments describing input data fields on selected row of sheet 'Input'.
@@ -31,7 +31,8 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 
 <p align="center"><img src="images/Fig03.png" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Press F1-key for popup field descriptions in current row</sub></p>
 
-- Key CTRL+I to import any EnergyPlus data file. Both legacy Input Data Files (.IDF) and new .epJSON files can be imported. Immediately after importing the file into sheet 'Input', EpXL vets the data against the JSON schema. After this you can edit the data just like any spreadsheet by inserting or deleting rows and editing cells. Each row is an object type, and each column is an input field. The object types can appear in any order, but fields must appear in the order specified by the schema.
+- Key CTRL+I to import any EnergyPlus data file. Both legacy Input Data Files (.IDF) and new .epJSON files can be imported. You can optionally append/merge with existing input data, when you import files. Immediately after importing the file into sheet 'Input', EpXL vets the data against the JSON schema for EnergyPlus. After this you can edit the data just like any spreadsheet by inserting or deleting rows and editing cells. Each row is an object type, and each column is an input field. The object types can appear in any order, but fields must appear in the order specified by the schema.
+- EpXL can handle huge models, with thousands of objects (rows). One adaptation to achieve this was that the values for object Matrix:TwoDimension are stored as strings, i.e. each matrix row is stored in one cell as string of semicolon-separated values in row-major order. Thus a 10x10 matrix is stored in 10 spreadsheet cells, and EpXL can hypothetically store matrices up to a maximum of 2<sup>14</sup> rows x 2<sup>14</sup> columns (assuming single digit elements).
 - Key CTRL+Q (for Quality check) any time, to vet the input data in sheet 'Input' against the schema. This checks for missing or superfluous/duplicate object types, missing required field values, out-of-range values, and case-sensitive text options. Incorrect case is corrected automatically for case-sensitive options. This checking is also conducted automatically when you click on the 'Start simulation' button.
 - EpXL is distributed with the input data schema (earlier called Input Data Dictionary, IDD) for EnergyPlus v9.1.0 embedded. Whenever a new version of Energy Plus is relased, you can update EpXL to the latest schema by viewing sheet 'Schema', which automatically imports the latest schema (Energy+.schema.epJSON file), or an earlier version of you choose. Save the EpXL workbook after you have done this.
 - User functions for psychrometrics to convert between relative humidity, dewpoint temperature and humidity ratio (kg H2O / kg dry air): EpXL_Pws(Ta_K), EpXL_RH1_air(Tair_K, Tdew_K), EpXL_RH2_air(Ta_K, Patm_Pa, HumidRatio_kgkg), EpXL_HumidRatio1_air(Ta_K, Patm_Pa, RH), EpXL_HumidRatio2_air(Tdew_K, Patm_Pa), EpXL_HumidRatio3_air(Ta_K, Patm_Pa, Twet_K), EpXL_Tdew1_air(Pw_Pa), Tdew2_air(Patm_Pa, HumidRatio_kgkg), Tdew3_air(Ta_K, RH)
@@ -55,8 +56,9 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 <p align="center"><img src="images/Fig10.png" alt="Pareto-front function"/><br/><sub>Example of use of the user function *EpXL_ParetoFront*. Cases on the Pareto front are flagged as TRUE</sub></p>
 <p align="center"><img src="images/Fig11.png" alt="Pareto-front function"/><br/><sub>Sort all the output rows, using the *EpXL_PareroFront* column as key, to separate out the cases that are on the ParetoFront</sub></p>
   
-- EpXL is written in Visual Basic for Applications (VBA), which you are free to edit. One of the routines is dedicated to user-code to modify to automate your own tasks. There are many on-line resources for learning VBA, such as *'Excel VBA for Dummies'* 3rd Ed.
-- EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window. 
+- EpXL is written in Visual Basic for Applications (VBA), which you are free to edit. One of the routines is dedicated to user-code to modify to automate your own tasks. There are many on-line resources for learning VBA, such as *'Excel VBA for Dummies'* 3rd Ed. If you want new functions, or are happy to share your own improvements to EpXL, contact the author (see below).
+- EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window.
+
 
 ### Installation and activation
 - Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
