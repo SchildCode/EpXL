@@ -81,7 +81,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
   <sub>Splash screen</sub></p>
 
 ### Updating to different versions of EnergyPlus
-- First time you use run a simulation in EpXL, a window may appear asking you to browse to thr root directory for EnergPlus on your machine; see the figure below. The root path is then stored in cell B1 of sheet 'Simulate'. Clear cell B1 whenever you want to use a different version of EnergyPlus.
+- First time you use run a simulation in EpXL, a window may appear asking you to browse to the root directory for EnergPlus on your PC; see the figure below. The root path is then stored in cell B1 of sheet 'Simulate'. Clear cell B1 whenever you want to use a different version of EnergyPlus.
 - You should also update the schema, which is stored in EpXL worksheet 'Schema'. Whenever you view sheet 'Schema' you will be asked if you wish to import a different schema. The schema file 'Energy+.schema.epJSON' will then be imported from the current EnergyPlus root directory; see figure below
 
 <p align="center"><img src="images/Fig04.png" alt="EpXL splash window"/><br/><sub>Window asking for you to browse to EnergyPlus root path</sub></p>
