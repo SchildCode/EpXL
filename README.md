@@ -85,7 +85,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 
 ### BibTeX for citing EpXL
 @Misc{Schild19,<br/>
-  author =   {Peter G. Schild},<br/>
+→author =   {Peter G. Schild},<br/>
   title =    {{EpXL}: {EnergyPlus-Excel}},<br/>
   howpublished = {\url{https://github.com/SchildCode/EpXL/}},<br/>
   doi = {10.5281/zenodo.3249089}<br/>
