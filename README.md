@@ -11,7 +11,9 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **User functions for psychrometrics and Pareto-front (multi-objective optimization)**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
 
-<p align="center"><img src="images/Fig01.gif" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Gif sequence showing opening the spreadsheet, importing an IDF or epSJON file (with CTRL+I), automatic error checking, and adding objects, editing/adding data, and viewing parameter descriptions (F1 key)</sub></p>
+<p align="center"><img src="images/Fig01.gif" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Animation of opening the spreadsheet, importing an IDF or epSJON file (with CTRL+I), automatic error checking, and adding objects, editing/adding data, and viewing parameter descriptions (F1 key)</sub></p>
+
+<p align="center"><img src="images/Fig02.gif" alt="EpXL simulation sheet"/><br/><sub>'Simulate' sheet: Animation of a single simulation (pressing 'Start Simulation' button), showing saving the epJSON file EnergyPlus console, and clicking on links for error report, DXF file visulalization, and importing time series data into Excel.</sub></p>
   
 ### Summary of the main macros
 - **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
@@ -45,9 +47,13 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
   - EpXL_Tdew1_air(Pw_Pa)
   - EpXL_Tdew2_air(Patm_Pa, HumidRatio_kgkg)
   - EpXL_Tdew3_air(Ta_K, RH)
-- To run a simulation, click on button "Run simulation" on sheet 'Simulate'. For "single-case" simulation, EpXL shows a list of hyperlinks to important output files. For multiple-case simulations, EpXL generates a list inputs and outputs for each case in sheet 'Output'.
+- To run a simulation, click on button "Start simulation" on sheet 'Simulate'. For "single-case" simulation, EpXL shows a list of hyperlinks to important output files. For multiple-case simulations, EpXL generates a list inputs and outputs for each case in sheet 'Output'.
 
 <p align="center"><img src="images/Fig06.png" alt="View DXF file"/><br/><sub>Sheet 'Simulate': Press 'Start simulation' button. The most important output files are listed with hyperlinks. Hyperlink for viewing 3D model (.DXF file). The other hyperlinks open files in Excel or text viewers.</sub></p>
+
+### Multiple-case automation
+
+<p align="center"><img src="images/Fig03.gif" alt="EpXL multi-objective optimization"/><br/><sub>'Simulation' sheet: Animation showing selection of multiple-case automation option, editing the input parameters, checking the links on the 'Input' sheet, EnergyPlus simulations (by pressing 'Start simulation'), plotting of the results in sheet 'Output', and finally calculating/plotting a Pareto front.</sub></p>
 
 - Multidimensional optimization and parameter analysis (multiple-case automation), with simpler yet more flexible functionality compared to [GenOpt](https://simulationresearch.lbl.gov/GO/index.html):
   - Parametric analysis (discrete, either multidimensional or one-at-a-time sensitivity analysis)
