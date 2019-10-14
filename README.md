@@ -14,7 +14,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 <p align="center"><img src="images/Fig01.gif" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Animation of opening the spreadsheet, importing an IDF or epSJON file (with CTRL+I), automatic error checking, and adding objects, editing/adding data, and viewing parameter descriptions (F1 key)</sub></p>
 
 ### Installation and activation
-- Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
+- Simply download the EpXL spreadsheet by clicking on the '**EpXL_vYYMMDD.xlsb**' link above, then click on the 'Download' button. No further installation or registration is needed. Just open the .xlsb file in Microsoft Excel (Windows only).
 - This is a Visual Basic macro-enabled spreadhseet, so you must activate macros for it to function: 
   - When you open the file for the first time in Excel, you will see a yellow bar at the top of the window, with the message *"PROTECTED VIEW Be careful... [Enable Editing]"*. Click on the 'Enable Editing' button. 
   - Next, depending on the security settings on your installation of Microsoft Excel, a red bar may appear at the top of the window, with the message *"BLOCKED CONTENT Macros in this document have been disabled..."*. This can be solved by moving the file to a directory on your PC that you designate for files that you trust, then open the file in Excel. To designate a 'trusted directory', click on **File > Options > Trust Center > Trust Center Settings > Trusted Locations > Add new location**, then browse to a directory, e.g. C:\TEMP\. Finally check that **Trust Center Settings > Trusted Documents > Disable Trusted Documents**  is not ticked.
