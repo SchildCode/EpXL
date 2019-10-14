@@ -13,8 +13,17 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 
 <p align="center"><img src="images/Fig01.gif" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Animation of opening the spreadsheet, importing an IDF or epSJON file (with CTRL+I), automatic error checking, and adding objects, editing/adding data, and viewing parameter descriptions (F1 key)</sub></p>
 
-<p align="center"><img src="images/Fig02.gif" alt="EpXL simulation sheet"/><br/><sub>'Simulate' sheet: Animation of a single simulation (pressing 'Start Simulation' button), showing saving the epJSON file EnergyPlus console, and clicking on links for error report, DXF file visulalization, and importing time series data into Excel.</sub></p>
-  
+### Installation and activation
+- Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
+- This is a Visual Basic macro-enabled spreadhseet, so you must activate macros for it to function: 
+  - When you open the file for the first time in Excel, you will see a yellow bar at the top of the window, with the message *"PROTECTED VIEW Be careful... [Enable Editing]"*. Click on the 'Enable Editing' button. 
+  - Next, depending on the security settings on your installation of Microsoft Excel, a red bar may appear at the top of the window, with the message *"BLOCKED CONTENT Macros in this document have been disabled..."*. This can be solved by moving the file to a directory on your PC that you designate for files that you trust, then open the file in Excel. To designate a 'trusted directory', click on **File > Options > Trust Center > Trust Center Settings > Trusted Locations > Add new location**, then browse to a directory, e.g. C:\TEMP\. Finally check that **Trust Center Settings > Trusted Documents > Disable Trusted Documents**  is not ticked.
+  - When macros are properly activated, **EpXL** shows a small square splash-screen when you open the file (see image below). This splash screen shows the licence info, and advises you if an update is available for download from GitHub. Simply press 'Close' button to close the splash-screen. 
+  - If still no splash-screen appears, then you might be able to fix it by menu option **File > Options > Trust Center > Trust Center Settings > Macro Settings > Disable all macros with notification**, which is a suitable level of security.
+
+<p align="center"><img src="images/Fig01.png" alt="EpXL splash window"/><br/>
+  <sub>Splash screen</sub></p>
+
 ### Summary of the main macros
 - **CTRL+I**: Import an input data file (.IDF or .epJSON) file to sheet 'Input'.
 - **CTRL+Q**: Quality check of the input data in sheet 'Input'.
@@ -74,17 +83,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - EpXL is written in Visual Basic for Applications (VBA), which you are free to edit. One of the routines is dedicated to user-code to modify to automate your own tasks. There are many on-line resources for learning VBA, such as *'Excel VBA for Dummies'* 3rd Ed. If you want new functions, or are happy to share your own improvements to EpXL, contact the author (see below).
 - EpXL checks GitHub for updates when you open the workbook (only if the last time it checked was 2+ days ago). An update message is shown in the splash-screen window.
 
-
-### Installation and activation
-- Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
-- This is a Visual Basic macro-enabled spreadhseet, so you must activate macros for it to function: 
-  - When you open the file for the first time in Excel, you will see a yellow bar at the top of the window, with the message *"PROTECTED VIEW Be careful... [Enable Editing]"*. Click on the 'Enable Editing' button. 
-  - Next, depending on the security settings on your installation of Microsoft Excel, a red bar may appear at the top of the window, with the message *"BLOCKED CONTENT Macros in this document have been disabled..."*. This can be solved by moving the file to a directory on your PC that you designate for files that you trust, then open the file in Excel. To designate a 'trusted directory', click on **File > Options > Trust Center > Trust Center Settings > Trusted Locations > Add new location**, then browse to a directory, e.g. C:\TEMP\. Finally check that **Trust Center Settings > Trusted Documents > Disable Trusted Documents**  is not ticked.
-  - When macros are properly activated, **EpXL** shows a small square splash-screen when you open the file (see image below). This splash screen shows the licence info, and advises you if an update is available for download from GitHub. Simply press 'Close' button to close the splash-screen. 
-  - If still no splash-screen appears, then you might be able to fix it by menu option **File > Options > Trust Center > Trust Center Settings > Macro Settings > Disable all macros with notification**, which is a suitable level of security.
-
-<p align="center"><img src="images/Fig01.png" alt="EpXL splash window"/><br/>
-  <sub>Splash screen</sub></p>
+<p align="center"><img src="images/Fig02.gif" alt="EpXL simulation sheet"/><br/><sub>'Simulate' sheet: Animation of a single simulation (pressing 'Start Simulation' button), showing saving the epJSON file EnergyPlus console, and clicking on links for error report, DXF file visulalization, and importing time series data into Excel.</sub></p>
 
 ### Updating to different versions of EnergyPlus
 - First time you use run a simulation in EpXL, a window may appear asking you to browse to the root directory for EnergPlus on your PC; see the figure below. The root path is then stored in cell B1 of sheet 'Simulate'. Clear cell B1 whenever you want to use a different version of EnergyPlus.
