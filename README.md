@@ -8,7 +8,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **Hyperlinks automatically import results files into Excel, e.g. time-series**
 - **Hyperlinks to view 3D model of the building, and airflow network**
 - **Parametric/sensitivity analysis, multi-objective optimization (same Pareto-ranking as NSGA-ii)**
-- **User-definable single-objective optimization suitable for very large number of parameters.
+- **User-definable single-objective optimization suitable for very large number of parameters.**
 - **User functions for psychrometrics**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
 
