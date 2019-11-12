@@ -7,8 +7,9 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel spreadsh
 - **Import/merge/export .epJSON and legacy .IDF input data files**
 - **Hyperlinks automatically import results files into Excel, e.g. time-series**
 - **Hyperlinks to view 3D model of the building, and airflow network**
-- **Multidimensional parametric analysis and and user-definable multi-objective optimization**
-- **User functions for psychrometrics and Pareto-front (multi-objective optimization)**
+- **Parametric/sensitivity analysis, multi-objective optimization (same Pareto-ranking as NSGA-ii)**
+- **User-definable single-objective optimization suitable for very large number of parameters.
+- **User functions for psychrometrics**
 - **Always up-to-date with the latest version of EnergyPlus (schema)**
 
 <p align="center"><img src="images/Fig01.gif" alt="EpXL input data sheet"/><br/><sub>'Input' sheet: Animation of opening the spreadsheet, importing an IDF or epSJON file (with CTRL+I), automatic error checking, and adding objects, editing/adding data, and viewing parameter descriptions (F1 key)</sub></p>
