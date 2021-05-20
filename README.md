@@ -94,13 +94,15 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel user-int
 © Peter.Schild@OsloMet.no
 
 ### BibTeX for citing EpXL
-@Misc{Schild19,<br/>
-&emsp;author =   {Peter G. Schild},<br/>
-&emsp;title =    {{EpXL}: {EnergyPlus-Excel}},<br/>
-&emsp;howpublished = {\url{https://github.com/SchildCode/EpXL/}},<br/>
-&emsp;doi = {10.5281/zenodo.3249089}<br/>
-&emsp;year = {2019}<br/>
-}<br/>
+```bibtex
+@Misc{Schild19,
+  author = {Peter G. Schild},
+  title = {{EpXL}: {EnergyPlus-Excel}},
+  howpublished = {\url{https://github.com/SchildCode/EpXL/}},
+  doi = {10.5281/zenodo.3249089},
+  year = {2019}
+}
+```
 
 ### References
 [<a name="ref1">1</a>] Faure, H., Lemieux, C. (2009). "Generalized Halton Sequences in 2008: A Comparative Study", *ACM Transactions on Modeling and Computer Simulation (TOMACS)*. Vol.19 No.4, Oct. 2009, Article no. 15
