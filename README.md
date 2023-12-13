@@ -97,7 +97,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel user-int
 
 ```bibtex
 @Misc{Schild19,
-  author = {Peter G. Schild},
+  author = {Schild, Peter G.},
   title = {{EpXL}: {EnergyPlus-Excel}},
   howpublished = {\url{https://github.com/SchildCode/EpXL/}},
   doi = {10.5281/zenodo.3249089},
