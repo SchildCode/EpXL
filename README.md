@@ -1,4 +1,4 @@
-# EpXL [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3249089.svg)](https://doi.org/10.5281/zenodo.3249089) <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
+# EpXL [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3249088.svg)](https://doi.org/10.5281/zenodo.3249088) <img src="images/EnergyPlus-Excel-Logo.png" alt="EpXL logo" height="150px" align="right" />
 EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel user-interface to the EnergyPlus™ whole-building energy simulation program (https://energyplus.net/). It can import and merge .epJSON and legacy .IDF input data files, or you can create/edit from scratch. It gives a compact tabular overview of all input data, which you can manipulate (copy/paste/edit), with popup descriptions. EpXL has numerous automation functions including error-checking, parametric analysis and optimization. Output is automatically imported into Excel, with a link for viewing the 3D model.
 
 ### Functionality overview
@@ -100,8 +100,8 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel user-int
   author = {Schild, Peter G.},
   title = {{EpXL}: {EnergyPlus-Excel}},
   howpublished = {\url{https://github.com/SchildCode/EpXL/}},
-  doi = {10.5281/zenodo.3249089},
-  url = {https://doi.org/10.5281/zenodo.3249089}
+  doi = {10.5281/zenodo.3249088},
+  url = {https://doi.org/10.5281/zenodo.3249088}
   year = {2019}
 }
 ```
