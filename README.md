@@ -101,6 +101,7 @@ EnergyPlus-Excel is a simple yet powerful macro-enabled Microsoft Excel user-int
   title = {{EpXL}: {EnergyPlus-Excel}},
   howpublished = {\url{https://github.com/SchildCode/EpXL/}},
   doi = {10.5281/zenodo.3249089},
+  url = {https://doi.org/10.5281/zenodo.3249089}
   year = {2019}
 }
 ```
